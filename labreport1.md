@@ -2,6 +2,8 @@
 
 Hello, this blog post will teach you and give you steps on how to log into your ieng6 account.
 
+---
+
 ## Step 1: Visual Studio Code
 
 In order to access your ieng6 account you will need to have a terminal. The Visual Studio Code editor has a terminal we can use and is where you will most likely do your programming assignments in the future. 
@@ -17,6 +19,8 @@ Once on screen click the button on the top right of the page to download the app
 After downloading and opening the app your screen should look like this:
 
 <img width="1252" alt="Screenshot 2023-01-12 at 11 40 11 AM" src="https://user-images.githubusercontent.com/122561946/212164871-976aaeb8-2b01-4b43-89b3-87fc37b04b6d.png">
+
+---
 
 ## Step 2: Remotely connecting
 
@@ -47,6 +51,20 @@ Once you are connected it should look like below:
 
 Hooray! You have remotely connected!
 
+---
+
 ## Trying some commands
+
+Now that you are remotely connected it is time for you to try some commands. You can experiment with the commands we learned in class or try some of the ones below:
+
+```
+cd ~
+cd
+ls -lat
+ls -a
+ls <directory> where <directory> is /home/linux/ieng6/cs15lwi23/cs15lwi23abc, where the abc is one of the other group members’ username
+cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
+cat /home/linux/ieng6/cs15lwi23/public/hello.txt
+```
 
 
