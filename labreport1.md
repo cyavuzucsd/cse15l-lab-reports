@@ -24,13 +24,15 @@ After downloading and opening the app your screen should look like this:
 
 ## Step 2: Remotely connecting
 
-Once in Visual Studio Code you will want to press the sqaure with a rectangle on the bottom as shown in the imaghe below:
+Once in Visual Studio Code you will want to press the sqaure with a rectangle on the bottom as shown in the image below:
 
 <img width="1249" alt="Screenshot 2023-01-12 at 9 34 56 PM" src="https://user-images.githubusercontent.com/122561946/212245092-30187bbb-ddfa-4b9d-8f73-b1ee40c5fa67.png">
 
 Your terminal should look like below with the words specified for your device.
 
 <img width="1254" alt="Screenshot 2023-01-12 at 9 45 45 PM" src="https://user-images.githubusercontent.com/122561946/212246344-8ee00a60-6afe-4316-a7c3-a15404fbb3b3.png">
+
+Since I am a Mac user I did not have to download bash since it was already on my laptop. Fow Windows users you may have to download bash which is a step I skipped since it was not necessary for me.
 
 After your terminal is open you want to copy the command below, but replace the three dashes with your unique code given to you:
 
@@ -61,9 +63,23 @@ Now that you are remotely connected it is time for you to try some commands. You
 `cd`
 `ls -lat`
 `ls -a`
-`ls <directory>` where <directory> is `/home/linux/ieng6/cs15lwi23/cs15lwi23abc`, where the abc is one of the other group members’ username
 `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
 `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
-```
+`ls <directory>` where `<directory>` is `/home/linux/ieng6/cs15lwi23/cs15lwi23---`, where --- is one of the other group members’ username
 
+While I was in the lab I tried `ls -lat` whicgh gave me this output:
+
+<img width="1232" alt="Screenshot 2023-01-12 at 10 15 03 PM" src="https://user-images.githubusercontent.com/122561946/212250557-a3762191-1806-49f9-9475-e03da3633622.png">
+
+Then I tried `ls -a`: 
+
+<img width="1203" alt="Screenshot 2023-01-12 at 10 16 14 PM" src="https://user-images.githubusercontent.com/122561946/212250665-ef4ab172-a45f-4fd3-980c-b1c5467d825e.png">
+
+I also tried `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`:
+
+<img width="1211" alt="Screenshot 2023-01-12 at 10 17 15 PM" src="https://user-images.githubusercontent.com/122561946/212250835-5c92d523-1691-4642-99c5-4140ce4cd110.png">
+
+I ran all the commands which were on the week 1 website for CSE15L. I only included three screenshots to not make the lab report unnecessarily long. 
+
+Congratulations! You have complete all the steps!
 
