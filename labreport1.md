@@ -53,18 +53,17 @@ Hooray! You have remotely connected!
 
 ---
 
-## Trying some commands
+## Step 3: Trying some commands
 
 Now that you are remotely connected it is time for you to try some commands. You can experiment with the commands we learned in class or try some of the ones below:
 
-```
-cd ~
-cd
-ls -lat
-ls -a
-ls <directory> where <directory> is /home/linux/ieng6/cs15lwi23/cs15lwi23abc, where the abc is one of the other group members’ username
-cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
-cat /home/linux/ieng6/cs15lwi23/public/hello.txt
+`cd ~`
+`cd`
+`ls -lat`
+`ls -a`
+`ls <directory>` where <directory> is `/home/linux/ieng6/cs15lwi23/cs15lwi23abc`, where the abc is one of the other group members’ username
+`cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`
+`cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
 ```
 
 
