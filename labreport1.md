@@ -81,5 +81,5 @@ I also tried `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`:
 
 I ran all the commands which were on the week 1 website for CSE15L. I only included three screenshots to not make the lab report unnecessarily long. 
 
-Congratulations! You have complete all the steps!
+Congratulations! You have completed all the steps!
 
