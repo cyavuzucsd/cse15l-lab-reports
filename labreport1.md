@@ -67,17 +67,23 @@ Now that you are remotely connected it is time for you to try some commands. You
 `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`
 `ls <directory>` where `<directory>` is `/home/linux/ieng6/cs15lwi23/cs15lwi23---`, where --- is one of the other group members’ username
 
-While I was in the lab I tried `ls -lat` whicgh gave me this output:
+While I was in the lab I tried `ls -lat` whicgh gave me the output below. The ls command stands for list directory. Ls can be followed with a path such as ls <path> whuch would list all the files in that path. Inputting ls -lat would show all the files in the current directory in a list format with one file per line, as well as showing you the hidden files, all ordered with the last time they were modified. This happens because ls -lat uses three commands. ls -l whihc displayhs files in a list with one per line. ls -a which shows all the files including the hidden files. ls -t which organizes them by the tiome they were last modified. 
 
 <img width="1232" alt="Screenshot 2023-01-12 at 10 15 03 PM" src="https://user-images.githubusercontent.com/122561946/212250557-a3762191-1806-49f9-9475-e03da3633622.png">
+  
+As you can see from the image above the ls -lat command did exactly what was described. The files are listed with one file per line. The hidden files are also nshown and all organized by the time they were last modified. 
 
-Then I tried `ls -a`: 
+Then I tried `ls -a` which shows all the filed including the hidden ones. Trying this commmand aloine just displays the files. Not in a format or an order. Just displays them.: 
 
 <img width="1203" alt="Screenshot 2023-01-12 at 10 16 14 PM" src="https://user-images.githubusercontent.com/122561946/212250665-ef4ab172-a45f-4fd3-980c-b1c5467d825e.png">
+  
+As you can see in the image above the command did just that. It displayed all the files as well as the hidden ones.
 
-I also tried `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`:
+I also tried `cat /home/linux/ieng6/cs15lwi23/public/hello.txt`. The cat command displays the contents of a file without opening it. This can also be done with multiple files. As seen from the command it is directing its path to the hello.txt file in the remote computer. This way the contents of the hello.txt file can be displayed without the need of opening it or editing it.:
 
 <img width="1211" alt="Screenshot 2023-01-12 at 10 17 15 PM" src="https://user-images.githubusercontent.com/122561946/212250835-5c92d523-1691-4642-99c5-4140ce4cd110.png">
+  
+As you can see from the image above the command did exactly what it was supposed to do. It displayed the contents of the hello.txt file directly into the terminal. This way the user can see the message in the fuile which was "Hello! Welcome to CSE15L".
 
 I ran all the commands which were on the week 1 website for CSE15L. I only included three screenshots to not make the lab report unnecessarily long. 
 
