@@ -6,9 +6,44 @@ These are the screenshots and explanations for what I did for lab 3.
 
 ## Part 1: String Server
 
-The image below is my code for the StringServer. I used what I learned from the second week of lab to write this code.
+The code below is my code for the StringServer. I used what I learned from the second week of lab to write this code.
 
-<img width="753" alt="Screenshot 2023-01-29 at 2 33 30 PM" src="https://user-images.githubusercontent.com/122561946/215359730-0c3ba12a-68dd-4bfd-9c79-77320c5b2200.png">
+```
+import java.io.IOException;
+import java.net.URI;
+
+class Handler1 implements URLHandler {
+    // The one bit of state on the server: a number that will be manipulated by
+    // various requests.
+    String returnAll = "";
+
+    public String handleRequest(URI url) {
+        if (url.getPath().equals("/")) {
+            return String.format("No words added");
+        }else if(url.getPath().equals("/add-message")){
+            System.out.println("Path: " + url.getPath());
+            String[] parameters = url.getQuery().split("=");
+            String newString = parameters[1];
+            returnAll = returnAll + newString + "\n";
+            return returnAll;
+        }
+        return "404 Not Found!";
+    }
+}
+
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler1());
+    }
+}
+```
 
 Now here is the first example of using /add-message:
 
@@ -65,7 +100,7 @@ The code associated with it is:
 
 ```
 static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];<img width="846" alt="Screenshot 2023-01-29 at 4 06 31 PM" src="https://user-images.githubusercontent.com/122561946/215363917-be745c76-e613-4604-8eab-ae5af11b5826.png">
+    int[] newArray = new int[arr.length];
 
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
