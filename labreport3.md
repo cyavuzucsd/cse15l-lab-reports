@@ -149,6 +149,77 @@ The second example is:
 
 `find -perm 700`
 
-The outpu was nothing. In this case there was no file that fitted this permission. So there was no file that only allowed the user to read, write, and execute. This command can be useful in allowing the user to understand if they can even edit any files or not by placing a 0 instead of the 7. Furthermore the same goes for group and other. 
+The output was nothing. In this case there was no file that fitted this permission. So there was no file that only allowed the user to read, write, and execute. This command can be useful in allowing the user to understand if they can even edit any files or not by placing a 0 instead of the 7. Furthermore the same goes for group and other. 
 
+## `find -mtime`
+
+I was able to find this command through ChatGPT. 
+
+This command allows the user to find certain files that were modified in the last specified time. 
+
+The first example of this command is:
+
+`find -path '*/non-fiction/OUP*'`
+
+The output was:
+
+```
+./non-fiction/OUP
+./non-fiction/OUP/Abernathy
+./non-fiction/OUP/Abernathy/ch1.txt
+./non-fiction/OUP/Abernathy/ch14.txt
+./non-fiction/OUP/Abernathy/ch15.txt
+./non-fiction/OUP/Abernathy/ch2.txt
+./non-fiction/OUP/Abernathy/ch3.txt
+./non-fiction/OUP/Abernathy/ch6.txt
+./non-fiction/OUP/Abernathy/ch7.txt
+./non-fiction/OUP/Abernathy/ch8.txt
+./non-fiction/OUP/Abernathy/ch9.txt
+./non-fiction/OUP/Berk
+./non-fiction/OUP/Berk/CH4.txt
+./non-fiction/OUP/Berk/ch1.txt
+./non-fiction/OUP/Berk/ch2.txt
+./non-fiction/OUP/Berk/ch7.txt
+./non-fiction/OUP/Castro
+./non-fiction/OUP/Castro/chA.txt
+./non-fiction/OUP/Castro/chB.txt
+...
+```
+
+This function finds all the files under the `/non-fiction/OUP` path in written_2. This is useful for users to learn which files are under a certain path for them to properly navigate through directories. In this case it was the `/non-fiction/OUP`.
+
+---
+
+The next example was:
+
+`find -path '*/travel_guides/berlitz2*`
+
+The output was:
+
+```
+./travel_guides/berlitz2
+./travel_guides/berlitz2/Algarve-History.txt
+./travel_guides/berlitz2/Algarve-Intro.txt
+./travel_guides/berlitz2/Algarve-WhatToDo.txt
+./travel_guides/berlitz2/Algarve-WhereToGo.txt
+./travel_guides/berlitz2/Amsterdam-History.txt
+./travel_guides/berlitz2/Amsterdam-Intro.txt
+./travel_guides/berlitz2/Amsterdam-WhatToDo.txt
+./travel_guides/berlitz2/Amsterdam-WhereToGo.txt
+./travel_guides/berlitz2/Athens-History.txt
+./travel_guides/berlitz2/Athens-Intro.txt
+./travel_guides/berlitz2/Athens-WhatToDo.txt
+./travel_guides/berlitz2/Athens-WhereToGo.txt
+./travel_guides/berlitz2/Bahamas-History.txt
+./travel_guides/berlitz2/Bahamas-Intro.txt
+./travel_guides/berlitz2/Bahamas-WhatToDo.txt
+./travel_guides/berlitz2/Bahamas-WhereToGo.txt
+./travel_guides/berlitz2/Bali-History.txt
+./travel_guides/berlitz2/Bali-WhatToDo.txt
+./travel_guides/berlitz2/Bali-WhereToGo.txt
+./travel_guides/berlitz2/Barcelona-History.txt
+...
+```
+
+This function finds all the files under the `/travel_guides/berlitz2` path in written_2. This helps users to learn which files are under a certain path for them to understand the directories. This time the user learned about the files in the path `/travel_guides/berlitz2`.
 
