@@ -107,7 +107,7 @@ The code associated with it is the same as before.
 
 The symptom of the bug is as shown in the image below: 
 
-<img width="846" alt="Screenshot 2023-01-29 at 4 06 31 PM" src="https://user-images.githubusercontent.com/122561946/215364090-43fe058e-8667-4867-81e4-10c122a2bf2c.png">
+<img width="637" alt="Screenshot 2023-02-12 at 2 08 00 PM" src="https://user-images.githubusercontent.com/122561946/218340406-731b837c-3ea2-44d0-9834-cf83beefa4a2.png">
 
 As seen from the image above the symptom of the bug is that it has a 0 intead of a 6 in the array. This can just be one of the many errors in the output but since it is the first one the test fails there and only shows that one to us. 
 
@@ -140,6 +140,10 @@ static int[] reversed(int[] arr) {
     return arr;
   }
 ```
+
+Here is the tests passing:
+
+<img width="626" alt="Screenshot 2023-02-12 at 2 18 48 PM" src="https://user-images.githubusercontent.com/122561946/218340682-3840eeea-7181-45ac-a4d9-42a2aa133f2b.png">
 
 As you can see in the code block above there is one significant change that fixes the bug. The bug was that there was not a temporary array which held the original data along with their indexes. This resulted in the new reversed array to use itself to reverse which then messed up the values and their indexes. By having a temp array we can ensure that we have a copy of the original array and use that to reverse into our new array. This way the bug is fixed and the JUnit test that did not pass passes. 
 
