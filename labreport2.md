@@ -109,21 +109,11 @@ The symptom of the bug is as shown in the image below:
 
 <img width="637" alt="Screenshot 2023-02-12 at 2 08 00 PM" src="https://user-images.githubusercontent.com/122561946/218340406-731b837c-3ea2-44d0-9834-cf83beefa4a2.png">
 
-As seen from the image above the symptom of the bug is that it has a 0 intead of a 6 in the array. This can just be one of the many errors in the output but since it is the first one the test fails there and only shows that one to us. 
+As seen from the image above the symptom of the bug is that it has a 0 intead of a 6 in the array. This can just be one of the many errors in the output but since it is the first one the test fails there and only shows that one to us. The reason why this error occurs is because there are no values in the   newArray array. As seen from the code every index of the array that is to be returned gets assigned with values from newArray. This means that it is only applying 0s to the array that is going to be returned. This makes the returned array `[0,0,0,0]`. The fix includes copying the contents of the inputted array into the newArray so when the reversing code runs it actually does it based on the numbers in the inputted array rather than an empty int array with zeros.
 
 The before-and-after of the bug:
 
 In the code snippet below you can see the method with the bug. It is the same one as the code block that the tests were associated with. 
-
-```
-static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
-    }
-    return arr;
-  }
-```
 
 Now here is the after version of the same method that includes a fix for the bug:
 
