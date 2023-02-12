@@ -76,11 +76,10 @@ For this lab report I chose the array bug which was the first bug we covered in 
 A failure inducing input for the program is:
 
 ```
-public void testReverse() {
-    int[] input1 = {3, 4, 5};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{5, 4, 3}, input1);
-	}
+public void testReversed1() {
+    int[] input2 = {3, 4, 5, 6};
+    assertArrayEquals(new int[]{6, 5, 4, 3}, ArrayExamples.reversed(input2));
+  }
 ```
 
 The code associated with it is:
@@ -104,18 +103,7 @@ public void testReversed() {
   }
 ```
 
-The code associated with it is:
-
-```
-static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
-    }
-    return arr;
-  }
-```
+The code associated with it is the same as before.
 
 The symptom of the bug is as shown in the image below: 
 
