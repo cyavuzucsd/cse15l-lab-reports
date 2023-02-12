@@ -47,7 +47,7 @@ class StringServer {
 
 Now here is the first example of using /add-message:
 
-<img width="753" alt="Screenshot 2023-01-29 at 2 33 30 PM" src="https://user-images.githubusercontent.com/122561946/215359830-83de88c1-ea74-475b-a34a-2ca44649d10c.png">
+<img width="707" alt="Screenshot 2023-01-29 at 2 39 46 PM" src="https://user-images.githubusercontent.com/122561946/218338170-30ee5ab9-1158-4f1c-8cf9-6f89631a67fc.png">
 
 In the image above the only method that is called is the handleRequest method which takes the URL in as an input. In the method there is an if statement which determines what to do based on what is put into the URL which is the important argument. Using the URL argument the method decides what to do and what message to display. If it is the first time entry into the server it will display "No words added". However for this usage of /add-message it uses the second condition which is only employed when /add-message is used. 
 
