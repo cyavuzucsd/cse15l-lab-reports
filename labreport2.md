@@ -55,14 +55,13 @@ Immediately when this condition is called the system prints out which path we ar
 
 "Part 1 of lab report 2"
 
-Then the variable returnAll, which is a string, gets added to with the newString and a new line to fit the format required for the next calls of /add-message. Then the returnAll variable which now has 
+Then the variable returnAll, which is a string, gets added to with the newString and a new line to fit the format required for the next calls of /add-message. 
+
+Then the returnAll variable which now has 
 
 "Part 1 of lab report 2" + "\n" 
 
 is returned to be displayed on the web server. 
-
-  
-  
 
 The image below is what happens when /add-message is used again:
 
