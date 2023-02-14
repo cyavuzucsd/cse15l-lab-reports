@@ -61,6 +61,8 @@ Then the variable returnAll, which is a string, gets added to with the newString
 
 is returned to be displayed on the web server. 
 
+
+
 The image below is what happens when /add-message is used again:
 
 <img width="538" alt="Screenshot 2023-01-29 at 2 48 49 PM" src="https://user-images.githubusercontent.com/122561946/215360298-fe2c726a-33c6-4f51-8f3e-205c57f2b402.png">
