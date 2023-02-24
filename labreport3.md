@@ -141,7 +141,7 @@ This function displays all the files with the permission 750. This permission me
 
 The permissions can be etter understood through the table at this link:
 
-https://www.multacom.com/faq/password_protection/file_permissions.htm
+[https://www.multacom.com/faq/password_protection/file_permissions.htm]
 
 ---
 
@@ -151,11 +151,11 @@ The second example is:
 
 The output was nothing. In this case there was no file that fitted this permission. So there was no file that only allowed the user to read, write, and execute. This command can be useful in allowing the user to understand if they can even edit any files or not by placing a 0 instead of the 7. Furthermore the same goes for group and other. 
 
-## `find -mtime`
+## `find -path`
 
 I was able to find this command through ChatGPT. 
 
-This command allows the user to find certain files that were modified in the last specified time. 
+This command allows the user to find certain files in the path you specified.  
 
 The first example of this command is:
 
