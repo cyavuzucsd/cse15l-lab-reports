@@ -141,7 +141,7 @@ This function displays all the files with the permission 750. This permission me
 
 The permissions can be etter understood through the table at this link:
 
-[https://www.multacom.com/faq/password_protection/file_permissions.htm]
+[Link](https://www.multacom.com/faq/password_protection/file_permissions.htm)
 
 ---
 
