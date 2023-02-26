@@ -32,8 +32,8 @@ Then I exited the interface using `Control-X` and `Y` and `<enter>` to exit and 
 To run the tests again I pressed `<up><up><up>` to get the first test message and then pressed <enter>. I repeated the previous step for the second test command to get the image below:
   
 <img width="711" alt="Screenshot 2023-02-25 at 5 46 33 PM" src="https://user-images.githubusercontent.com/122561946/221387867-032338b2-e7fe-43fd-ba49-2c14fa461c91.png">
-  
 
+## Step 9
 
 
 
