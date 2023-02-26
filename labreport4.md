@@ -35,5 +35,10 @@ To run the tests again I pressed `<up><up><up>` to get the first test message an
 
 ## Step 9
 
+For this final step I typed in `git commit -am 'Done'` to commit the changes. Then I typed in `git push` to push the repo resulting in the image below:
+  
+<img width="486" alt="Screenshot 2023-02-25 at 5 53 39 PM" src="https://user-images.githubusercontent.com/122561946/221388038-133ff012-450e-4773-b422-f42797516176.png">
+
+That is all. Thank you for reading. 
 
 
